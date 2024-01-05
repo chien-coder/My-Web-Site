@@ -15,6 +15,32 @@ jobs:
         with:
           host: ec2-54-179-190-54.ap-southeast-1.compute.amazonaws.com
           username: ec2-user
-          key: ${ { secrets.EC2_SSH_KEY }}
+          key: "-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAuO+1j8ETWGTz9Ua1HQmOXkZNxjX3achc4CjNSQPRv5FJ4D0p
+zY24Ikvv82TK/t/n/wYFfRNMoOs/th/56v+/p1u73uXf0H0Oo8pWz1pDXnumxfSb
+Av4lkZXW08xBdI1qnygxDewp6bXEBtHlILELWGBcGBEbDNTYJcmHpk8R8MvIRFT3
+zLeEyPGapVhkT+mOJS6aU449Ga9HdGeMe4e9YGyhBXsDBF+rcfKUR+jfXfdlAffm
+3QhRIENhAYvUdoR/7eOF5NFk/+1YyJQzi0JbupKS2Z4PVGjXJpRUdB5C6LxIT9pz
+al7rTaRXovdLBGGtciQK0zwCZfda7legH/tiFwIDAQABAoIBADT41HS8xSHIqOhU
+vIP4vMLcOGLSCnBOZ+v9Q+/qHCZXI2YLnvG16kxInA6HjG29DOLLgr70zDo7qCAu
+wJNDdk4lxIZwKc+6Qns/9eWm4S0rFfYVvmD5EyHEXaiFFSqhZyz3gjWOs+Kxodii
+PpNCoxFJaJesLqdaQB9yvlwwwd7KwqWXEGjZKwij9zWtYdKxV2DSa++QJi65yrjG
+xgD+qI+UcflYeR022NRwTWjT7OvmZLvtol42ex2JIVepg4mYu3lhKAlbNU29hKgi
+eo0wO948caNbr3mlFjvoSbGldHdEJ3KZHTzNzwTVZz89rkuoAd2LEJEghsp70E1M
+Y/BZgkECgYEA9RmxAWPRV7caV8lld4XepwGHX+7CQotMvmuxOT1UX6uw66iRaMu9
+F+edlEsS4S/Da7vJ27KIwUhRmkT7xnqvo6Ft7yZ1y2XJOZ7CiIh+zWUjUjutQyMl
+9zze/YLMTO2pgtG+uwJdx+rbpwLbWiIy91t2YVc9P85kgAskVMhCURkCgYEAwSkW
++tRW/FUdJBIpswU9cR6cMuS2vDi+KI5Ier1mkQ+ZREH8f1wlr17JRh9m6BcjU9lS
+V5d57NmT25BIxQJDvqZLIVG0soSqK9nOk50ZusH7xfAu1gw27hUKaiwU1jkkWpfL
+GUJ8zdEFusNH4wJ/sj+9x6XD2RR0wqcF5HPZwq8CgYEAzHOd31bwbYbjho8NAOK+
+k/kGf9OeX/vrDHyw3Np340ZI0otOoGgzWBlwrR7ipM0+6kM/YvBOe0xkJZednjcB
+BDHIjlE6uWwyqsnv5AxYGeVfzVzSbsqHBPHV4QqWeSVW3TUxMLYMnJMgnvQXHdyh
+Pw0gdppbETqNQvIIYGCcUSECgYBDJYOFglcStIvCxEWWo9WuAxQNZRBY8ei4tG1h
+rYGAH8oJvl6F74RyKCMTq0rcl16CgWNsa43I1gHeK5QAWD8wgSJQ3NRR0mhNghOb
+oNsW3uQk9M9zPR/DN7E9I0HDDm4ix+2kREaaTXUObWAJ/A5j6mCQjIE+byv/lown
+1FX4pQKBgH+eOIuiBvamEKHrehNQefekptFG6dpV195uSy8WolwFpFJfRQJCP7LY
+wYqtnOimeGySyBt1xZteFcpMZ50ld4kmIVoW4HiHM8BdzBHOyL2wJcLlzb9Tvm44
+vKB+SCFFH2MUbFMGpOK/dxHOx1Ov5c66lJNO7wYvzgp8pPgBe1Qz
+-----END RSA PRIVATE KEY-----"
       - name: Checkout the files
         run: ls -l
