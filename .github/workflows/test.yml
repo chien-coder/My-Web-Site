@@ -18,6 +18,9 @@ jobs:
           TARGET: ${ { secrets.TARGET_DIR }}
         run: |
           touch private_key.pem
+          echo "1"
           echo "$SSH_PRIVATE_KEY" > private_key.pem && chmod 600 private_key.pem
+          echo "2"
           ssh -i "private_key.pem" ec2-user@ec2-54-179-190-54.ap-southeast-1.compute.amazonaws.com
+          echo "3"
           ls
