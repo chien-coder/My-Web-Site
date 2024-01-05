@@ -19,5 +19,5 @@ jobs:
         run: |
           touch private_key.pem
           echo "$SSH_PRIVATE_KEY" > private_key.pem && chmod 600 private_key.pem
-          ssh "private_key.pem" ec2-user@ec2-54-179-190-54.ap-southeast-1.compute.amazonaws.com
+          ssh -o StrictHostKeyChecking=no -i private_key.pem ec2-user@ec2-54-179-190-54.ap-southeast-1.compute.amazonaws.com
           ls
