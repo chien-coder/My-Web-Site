@@ -17,6 +17,9 @@ jobs:
           REMOTE_USER: ${ { secrets.USERNAME }}
           TARGET: ${ { secrets.TARGET_DIR }}
         run: |
-          echo "$SSH_PRIVATE_KEY" > private_key && chmod 600 private_key
+          touch private_key
+          ls -l
+          echo "$SSH_PRIVATE_KEY" > private_key && sudo chmod 600 private_key
+          ls -l
           ssh -o StrictHostKeyChecking=no -i private_key ec2-user@ec2-54-179-190-54.ap-southeast-1.compute.amazonaws.com
           ls
